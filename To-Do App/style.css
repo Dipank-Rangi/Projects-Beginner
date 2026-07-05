@@ -36,3 +36,56 @@ html,body{
     margin-left: 18px;
     width: 30px;
 }
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 25px;
+
+}
+.row input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    padding: 10px 15px;
+    width: 40vw;
+   
+}
+
+.row button{
+    font-size: 20px;
+     border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px  40px;
+    background: #a81859;
+    color: #fff;
+    border-radius: 40px;
+
+
+
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+        content: "";
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background-image: url(unchecked.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: ;
+}

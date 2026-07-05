@@ -20,7 +20,7 @@ html,body{
 .todo-app{
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background: #aea4ab;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -41,7 +41,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #edeef0;
+    background: #eef1f6;
     border-radius: 30px;
     margin-bottom: 25px;
 
@@ -76,6 +76,8 @@ ul li{
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
+    position: relative;
+    /* display: none; */
 }
 
 ul li::before{
@@ -87,5 +89,35 @@ ul li::before{
         background-image: url(unchecked.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: ;
+        background-position: center;
+        top: 12px;
+        left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+      background-image: url(checked.png);
+}
+
+ul li span{
+    position: absolute;
+   top: 5px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 35px;
+    text-align: center;
+    
+}
+
+ul li span:hover{
+    background: #edeef0 ;
+    border-radius:50% ;
 }
